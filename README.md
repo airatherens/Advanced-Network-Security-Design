@@ -1,6 +1,6 @@
 # Advanced Network Security Design
 
-Palo Alto Networks + VMware Workstation Security Lab (EDU-210)  
+Palo Alto Networks + VMware Workstation Security Lab (ITSC-350)  
 Globex Corporation – Group 6 – Calgary HQ  
 Contributors: Dylan Yee, Amrit Kaur Dhiman, Aira Therens  
 

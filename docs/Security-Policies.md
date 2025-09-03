@@ -1,11 +1,3 @@
-
----
-
-### 📄 `Security-Policies.md`
-
-_Source: “Sensitive Data Protection”, “File Blocking”, “International Attacks”, “Reconnaissance Protection” sections_
-
-```markdown
 # Security Policies
 
 Source: Security configurations section of project documentation.

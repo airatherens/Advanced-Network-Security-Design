@@ -1,15 +1,4 @@
-
----
-
-### 📄 `Monitoring-and-Logging.md`
-
-_Source: “Syslog Monitoring & Forwarding” section_
-
 # Monitoring & Logging
-
-Source: Syslog + Log forwarding configuration in project documentation.
-
----
 
 ## Syslog Server
 - Server IP: **192.168.50.10** (Ubuntu).  

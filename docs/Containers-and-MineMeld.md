@@ -1,11 +1,3 @@
-
----
-
-### 📄 `Containers-and-MineMeld.md`
-
-_Source: “NGINX Container” and “MineMeld Deployment” sections_
-
-```markdown
 # Containers & MineMeld
 
 Source: NGINX + MineMeld configuration in project documentation.

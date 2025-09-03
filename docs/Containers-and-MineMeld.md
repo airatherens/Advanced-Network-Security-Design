@@ -1,9 +1,5 @@
 # Containers & MineMeld
 
-Source: NGINX + MineMeld configuration in project documentation.
-
----
-
 ## NGINX Container (DMZ)
 - Deployed in DMZ server.  
 - Command:

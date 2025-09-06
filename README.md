@@ -6,7 +6,7 @@ Contributors: Dylan Yee, Amrit Kaur Dhiman, Aira Therens
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project demonstrates the deployment and configuration of a **Palo Alto VM-50 firewall**, Virtual Router, DMZ server, and client machines inside **VMware Workstation**.  
 It follows a layered security approach with **Internal**, **DMZ**, **External**, and **Management** zones.  
@@ -22,7 +22,7 @@ It follows a layered security approach with **Internal**, **DMZ**, **External**,
 
 ---
 
-## 🏗️ Network Topology
+## Network Topology
 
 ![Topology Diagram](assets/topology-diagram.png)
 
@@ -34,7 +34,7 @@ It follows a layered security approach with **Internal**, **DMZ**, **External**,
 
 ---
 
-## ⚙️ Key Configurations
+## Key Configurations
 
 ### Security Policies
 - **Data Filtering:** Block SSNs using regex pattern match  
@@ -61,7 +61,7 @@ sudo docker-compose up -d
 - Applied to policy: Block Minemeld List Outside-to-Inside
 
 
-### 📊 Monitoring & Logging
+###Monitoring & Logging
 - Syslog Server (192.168.50.10) collects logs from firewall
 - Syslog Profile + Log Forwarding applied to all policies
 - Logs verified via:
@@ -71,7 +71,7 @@ tail -f /var/log/syslog
 sh /tg/traffic.sh
 - Exported to CSV from Firewall GUI for reporting
 
-### 🔄 NAT & Routing
+###NAT & Routing
 
 - NAT Policy: allow DMZ → Internet
 - Virtual Router: connects Internal, DMZ, External zones
@@ -79,12 +79,12 @@ sh /tg/traffic.sh
     - Destination: 0.0.0.0/0
     - Next Hop: External zone (ethernet1/1)
 
-### 🌩️ Disaster Recovery (Proposed)
+###Disaster Recovery (Proposed)
 - HQ firewall connected to AWS/Azure via Site-to-Site VPN
 - Replication of on-prem VMs to cloud for DR
 - Automatic failover in case of Calgary HQ outage
 
-### 🔑 Credentials (Lab Only)
+###Credentials (Lab Only)
 | System            | Username     | Password                |
 | ----------------- | ------------ | ----------------------- |
 | Firewall Admin    | admin        | GxAdm!24#Net\@10        |
@@ -96,7 +96,7 @@ sh /tg/traffic.sh
 | NGINX Admin       | ngadmin      | NginX!#Srv\@10\$        |
 | Traffic Generator | root         | Pal0Alt0! (lab default) |
 
-### 🗂️ Task Tracker
+###Task Tracker
 | Name  | Task                              | Time Taken | Date         |
 | ----- | --------------------------------- | ---------- | ------------ |
 | Dylan | MineMeld Container                | 3h         | Apr 16, 2025 |
